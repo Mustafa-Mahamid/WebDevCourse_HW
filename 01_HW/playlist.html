@@ -2,41 +2,59 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chill Music Playlist</title>
-    <link rel="stylesheet" href="playlist.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Favorite Songs</title>
+    <link rel="stylesheet" href="playlist.css" />
 </head>
 
 <body>
-    <h1>☕ Chill & Lofi Playlist 🎧</h1>
+    <h1>My Favorite Songs</h1>
 
-    <table>
+    <table class="playlist">
+        <colgroup>
+            <col style="width:25%">
+            <col style="width:25%">
+            <col style="width:50%">
+        </colgroup>
         <thead>
             <tr>
-                <th>Track Name</th>
-                <th>Type</th>
-                <th>Thumbnail</th>
+                <th>Song Name</th>
+                <th>Tags</th>
                 <th>Video</th>
             </tr>
         </thead>
+
         <tbody>
             <tr>
-                <td>Lofi Beats to Relax/Study</td>
-                <td>Stream</td>
-                <td><img src="https://i.ytimg.com/vi/jfKfPfyJRdk/hqdefault.jpg" alt="Lofi Girl"></td>
-                <td><iframe width="250" height="140" src="https://www.youtube.com/embed/jfKfPfyJRdk" frameborder="0"
-                        allow="autoplay; fullscreen; picture-in-picture; encrypted-media" allowfullscreen></iframe></td>
+                <td>Summer Vibes</td>
+                <td>Chill, WorkMusic</td>
+                <td class="video-cell">
+                    <iframe src="https://www.youtube.com/embed/q5lxnQ_k5Gg?si=EZ6e5UtICY5tdUei" title="Lofi Girl"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+                </td>
             </tr>
 
             <tr>
-                <td>Morning Coffee Jazz</td>
-                <td>Jazz/Chill</td>
-                <td><img src="https://i.ytimg.com/vi/Dx5qFachd3A/hqdefault.jpg" alt="Coffee Jazz"></td>
-                <td><iframe width="250" height="140" src="https://www.youtube.com/embed/Dx5qFachd3A" frameborder="0"
-                        allow="autoplay; fullscreen; picture-in-picture; encrypted-media" allowfullscreen></iframe></td>
+                <td>OMER BALIK Mix</td>
+                <td>Programming, Coding</td>
+                <td class="video-cell">
+                    <iframe src="https://www.youtube.com/embed/I7tPFF2TmeI?si=nhwAx0c4EAd0jA6d" title="OMER BALIK Mix"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+                </td>
             </tr>
 
+            <tr>
+                <td>JAZZ</td>
+                <td>Chill, LoFi, Bops</td>
+                <td class="video-cell">
+                    <iframe src="https://www.youtube.com/embed/Dx5qFachd3A" title="Coffee Jazz"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+                </td>
+            </tr>
         </tbody>
     </table>
 </body>
