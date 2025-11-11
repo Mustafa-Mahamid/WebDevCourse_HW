@@ -11,7 +11,7 @@
 <body>
     <h1>Contact</h1>
 
-    <table class="contact-form">
+    <table class="contact-form myCustomContact">
         <thead>
             <tr>
                 <th colspan="2" class="form-title">Send a Message</th>
@@ -46,12 +46,15 @@
         </tbody>
     </table>
 
-    <!-- alert -->
     <script>
-        document.getElementById('sendBtn')?.addEventListener('click', () => {
-            alert('Message sent! (demo)');
-        });
+        // Step 17 requirement: show alert on click
+        function sendMessage() {
+            alert("Message Sent!");
+        }
+
+        document.getElementById("sendBtn").addEventListener("click", sendMessage);
     </script>
+
 </body>
 
 </html>
