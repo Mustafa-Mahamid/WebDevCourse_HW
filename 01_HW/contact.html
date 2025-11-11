@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact</title>
+    <link rel="stylesheet" href="contact.css">
+</head>
+
+<body>
+    <h1>Contact</h1>
+
+    <table class="contact-form">
+        <thead>
+            <tr>
+                <th colspan="2" class="form-title">Send a Message</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">Name:</th>
+                <td><input type="text" placeholder="Your name"></td>
+            </tr>
+            <tr>
+                <th scope="row">Email:</th>
+                <td><input type="email" placeholder="name@example.com"></td>
+            </tr>
+            <tr>
+                <th scope="row">Phone:</th>
+                <td><input type="tel" placeholder="+972 50 000 0000"></td>
+            </tr>
+            <tr>
+                <th scope="row">Subject:</th>
+                <td><input type="text" placeholder="Subject"></td>
+            </tr>
+            <tr>
+                <th scope="row" class="align-top">Message:</th>
+                <td><textarea placeholder="Type your message..."></textarea></td>
+            </tr>
+            <tr>
+                <td colspan="2" class="actions">
+                    <button type="button" id="sendBtn">Send Message</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- alert -->
+    <script>
+        document.getElementById('sendBtn')?.addEventListener('click', () => {
+            alert('Message sent! (demo)');
+        });
+    </script>
+</body>
+
+</html>
