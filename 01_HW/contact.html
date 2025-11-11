@@ -5,10 +5,21 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact</title>
-    <link rel="stylesheet" href="contact.css">
+
+    <!-- SKIN stylesheet -->
+    <link id="skinStylesheet" rel="stylesheet" href="SKINS/basic.css">
 </head>
 
 <body>
+
+    <!-- SKIN SWITCH BUTTONS -->
+    <div style="text-align:center; margin: 12px 0 18px;">
+        <button onclick="changeSkin('basic')">Basic</button>
+        <button onclick="changeSkin('dark')">Dark</button>
+        <button onclick="changeSkin('modern')">Modern</button>
+        <button onclick="cycleSkin()">Next Skin ▶︎</button>
+    </div>
+
     <h1>Contact</h1>
 
     <table class="contact-form myCustomContact">
@@ -51,9 +62,11 @@
         function sendMessage() {
             alert("Message Sent!");
         }
-
         document.getElementById("sendBtn").addEventListener("click", sendMessage);
     </script>
+
+    <!-- SKIN switch script -->
+    <script src="skin.js"></script>
 
 </body>
 

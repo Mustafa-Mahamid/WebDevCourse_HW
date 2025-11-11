@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Audio List</title>
+    <style>
+        table {
+            width: 80%;
+            margin: 40px auto;
+            border-collapse: collapse;
+            font-family: Arial, sans-serif;
+        }
+
+        th,
+        td {
+            border: 1px solid #aaa;
+            padding: 12px;
+            text-align: center;
+        }
+
+        th {
+            background: #333;
+            color: white;
+        }
+
+        img {
+            width: 90px;
+            height: 90px;
+            object-fit: cover;
+        }
+
+        audio {
+            width: 200px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1 style="text-align:center;">Song List</h1>
+
+    <table>
+        <tr>
+            <th>Cover</th>
+            <th>Title</th>
+            <th>Artist</th>
+            <th>Year</th>
+            <th>Play</th>
+            <th>Download</th>
+        </tr>
+
+        <tr>
+            <td><img src="covers/imagine.png" alt=""></td>
+            <td>Imagine</td>
+            <td>John Lennon</td>
+            <td>1971</td>
+            <td><audio controls src="AudioFiles/imagine.mp3"></audio></td>
+            <td><a href="AudioFiles/imagine.mp3" download>Download</a></td>
+        </tr>
+
+        <tr>
+            <td><img src="covers/bohemian.png" alt=""></td>
+            <td>Bohemian Rhapsody</td>
+            <td>Queen</td>
+            <td>1975</td>
+            <td><audio controls src="AudioFiles/bohemian.mp3"></audio></td>
+            <td><a href="AudioFiles/bohemian.mp3" download>Download</a></td>
+        </tr>
+
+    </table>
+
+</body>
+
+</html>
