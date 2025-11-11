@@ -48,3 +48,15 @@ table.playlist {
     border: 0;
     display: block;
 }
+
+.titleHeader {
+    background-color: #0078d7;
+    color: white;
+}
+
+.highlightRow {
+    background-color: #d8e9ff;
+    color: #003b80;
+    font-weight: bold;
+    font-size: 1.1em;
+}
